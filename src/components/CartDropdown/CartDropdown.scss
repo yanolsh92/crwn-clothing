@@ -19,9 +19,14 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    // overflow: scroll;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
   }
-
+  .cart-items::-webkit-scrollbar {
+    /* WebKit */
+    display: none;
+  }
   button {
     margin-top: auto;
   }
